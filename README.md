@@ -14,7 +14,7 @@ From a geometric perspective, this strategy partitions the high-dimensional repr
 
 Instead of partition strategies utilizing unbounded planes, this architecture enforces geometric confinement directly from the outset. We replace traditional affine transformations entirely with solid ball boundaries, shifting the layer mechanics to localized proximity evaluations.
 
-Let $x_i \in \mathbb{R}^{1 \times m} (with `x.shape = (m,)`) represent the $i$-th input feature row vector within a batch of size $b$. Let $w_j \in \mathbb{R}^{m \times 1}$ (for $j = 1, 2, \dots, n$) denote the column vector representing the geometric center of the $j$-th multidimensional bounding ball. We define the trainable squared radius vector as $B \in \mathbb{R}^{1 \times n}$, where each scalar component $b_j$ represents the boundary threshold for its respective sphere $C_j$.
+Let $x_i \in \mathbb{R}^{1 \times m}$ (with `x.shape = (m,)`) represent the $i$-th input feature row vector within a batch of size $b$. Let $w_j \in \mathbb{R}^{m \times 1}$ (for $j = 1, 2, \dots, n$) denote the column vector representing the geometric center of the $j$-th multidimensional bounding ball. We define the trainable squared radius vector as $B \in \mathbb{R}^{1 \times n}$, where each scalar component $b_j$ represents the boundary threshold for its respective sphere $C_j$.
 
 At the localized tensor layer, each individual element $(i, j)$ of the output field is evaluated directly through the localized algebraic reduction of two $m$-dimensional spatial vectors:
 
