@@ -1,6 +1,6 @@
 # Beyond Affine Layers: Bounded Ball Coverings to Preclude Gradient Vanishing
 
-[https://zenodo.org/records/23068573](https://zenodo.org/records/23068573)
+DOI: [https://zenodo.org/records/23068573](https://zenodo.org/records/23068573)
 
 This repository presents the core implementation of **Bounded Ball Coverings**, an alternative geometric framework designed to transition from traditional unbounded hyperplane partitioning to localized proximity evaluations within hierarchical neural network architectures.
 
@@ -38,7 +38,7 @@ To visually contrast our bounded topology against traditional affine spaces, we 
 
 Traditional deep learning architectures often encounter optimization challenges when handling rapid feature divergence across deep affine layers, which frequently necessitates the integration of auxiliary regularizers such as Batch Normalization (BN). From a geometric perspective, standard normalization heuristics adjust the data distribution based on empirical statistical moments, effectively reshaping the feature space under an assumed Gaussian baseline. While highly effective in flattening numerical variances during feature propagation, this statistical rescaling can inadvertently affect the spatial localization of tight boundary interfaces, as the underlying affine layers remain fundamentally unconstrained and infinite in extent.
 
-In contrast, the proposed Bounded Ball Covered framework shifts the regularization mechanism from statistical post-processing to intrinsic geometric confinement. By defining the layer mechanics around the localized threshold condition of \(Y_{i,j} = 0\), the formulation establishes a well-defined boundary interface that naturally delineates localized spatial domains. Because the representation space is bounded-by-design under the compact solid ball envelopes, the error signals are propagation-stabilized directly through the spatial coordinates of the localized displacement arrays. This regular spatial confinement provides a mathematically consistent alternative for maintaining metric stability, reducing the structural dependence on multi-layer parameter stacking and empirical normalization loops while fully preserving the underlying topological representations.
+In contrast, the proposed Bounded Ball Covered framework shifts the regularization mechanism from statistical post-processing to intrinsic geometric confinement. By defining the layer mechanics around the localized threshold condition of $Y_{i,j} = 0$, the formulation establishes a well-defined boundary interface that naturally delineates localized spatial domains. Because the representation space is bounded-by-design under the compact solid ball envelopes, the error signals are propagation-stabilized directly through the spatial coordinates of the localized displacement arrays. This regular spatial confinement provides a mathematically consistent alternative for maintaining metric stability, reducing the structural dependence on multi-layer parameter stacking and empirical normalization loops while fully preserving the underlying topological representations.
 
 ## 4. Empirical Properties and Derivative Stability
 
