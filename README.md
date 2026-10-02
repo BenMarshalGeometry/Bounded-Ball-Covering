@@ -1,6 +1,6 @@
-# Beyond Affine Layers: Bounded Ball Coverings to Preclude Feature Divergence
+# Beyond Affine Layers: Bounded Ball Coverings to Preclude Gradient Vanishing
 
-![https://zenodo.org/records/23068573](https://zenodo.org/records/23068573)
+[!(https://zenodo.org/records/23068573)](https://zenodo.org/records/23068573)
 
 This repository presents the core implementation of **Bounded Ball Coverings**, an alternative geometric framework designed to transition from traditional unbounded hyperplane partitioning to localized proximity evaluations within hierarchical neural network architectures.
 
