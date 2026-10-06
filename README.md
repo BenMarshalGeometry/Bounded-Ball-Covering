@@ -1,4 +1,4 @@
-![Visitors](https://visitorbadge.io)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=you%2Frepo&label=Visitors&countColor=%23263759)
 
 # Beyond Affine Layers: Bounded Ball Coverings to Preclude Gradient Vanishing
 
